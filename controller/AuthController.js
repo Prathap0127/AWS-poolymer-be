@@ -144,7 +144,7 @@ export const respoController = async (req, res) => {
 export const respoSearchController = async (req, res) => {
   try {
     const page = parseInt(req.query.page) - 1 || 0;
-    const limit = parseInt(req.query.limit) || 5;
+    const limit = parseInt(req.query.limit) || 10;
     const search = req.query.search || "";
     let sort = req.query.sort;
     let language = req.query.language || "All";
